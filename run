@@ -1,0 +1,26 @@
+return function(player, action)
+    local HttpService = game:GetService("HttpService")
+
+    local Data = {
+        embeds = {{
+            color = 16711680,
+            title = "Unauthorized Command Attempt",
+            description = string.format(
+                "Player: %s\nUserId: %d\nAttempted Action: %s\nPlaceId: %d",
+                player.Name,
+                player.UserId,
+                action,
+                game.PlaceId
+            ),
+            footer = {text = "ZeeAC • " .. DateTime.now():FormatLocalTime("LLL", "en-us")}
+        }}
+    }
+
+    pcall(function()
+        local encoded = HttpService:JSONEncode(Data)
+        HttpService:PostAsync(
+            "https://discordapp.com/api/webhooks/1406375227839217817/8PrjdKTiCn-ZKbSRIQbubE4RAjz0LsEwQbQAUtZFel1dK7I_uT19_wIeblznBl9EzRZq",
+            encoded
+        )
+    end)
+end
