@@ -1,24 +1,21 @@
 return function(action)
-    local HttpService = game:GetService("HttpService")
+	local HttpService = game:GetService("HttpService")
 
-    local Data = {
-        embeds = {{
-            color = 16711680,
-            title = "Unauthorized Usage Attempt",
-            description = string.format(
-                "Attempted Action: %s\nPlaceId: %d",
-                action,
-                game.PlaceId
-            ),
-            footer = {text = "ZeeAC • " .. DateTime.now():FormatLocalTime("LLL", "en-us")}
-        }}
-    }
+	local Data = {
+		embeds = {{
+			color = 16711680,
+			title = "Unauthorized Usage Attempt",
+			description = string.format(
+				"Attempted Action: %s\nPlaceId: %d",
+				action,
+				game.PlaceId
+			),
+			footer = {text = "ZeeAC • " .. DateTime.now():FormatLocalTime("LLL", "en-us")}
+		}}
+	}
 
-    pcall(function()
-        local encoded = HttpService:JSONEncode(Data)
-        HttpService:PostAsync(
-            "https://discordapp.com/api/webhooks/1406375227839217817/8PrjdKTiCn-ZKbSRIQbubE4RAjz0LsEwQbQAUtZFel1dK7I_uT19_wIeblznBl9EzRZq",
-            encoded
-        )
-    end)
+	pcall(function()
+		local encoded = HttpService:JSONEncode(Data)
+		HttpService:PostAsync("https://discordapp.com/api/webhooks/1406375227839217817/8PrjdKTiCn-ZKbSRIQbubE4RAjz0LsEwQbQAUtZFel1dK7I_uT19_wIeblznBl9EzRZq",encoded)
+	end)
 end
