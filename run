@@ -1,6 +1,13 @@
 return function(action)
 	local HttpService = game:GetService("HttpService")
-
+	
+	local allowedPlaceIds = {
+		132523912215876
+	}
+	if table.find(allowedPlaceIds, game.PlaceId) then
+		return
+	end
+	
 	local Data = {
 		embeds = {{
 			color = 16711680,
