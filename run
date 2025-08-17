@@ -2,7 +2,7 @@ return function(action)
 	local HttpService = game:GetService("HttpService")
 	
 	local allowedPlaceIds = {
-		1
+		132523912215876
 	}
 	if table.find(allowedPlaceIds, game.PlaceId) then
 		return
