@@ -1,0 +1,26 @@
+{
+	fxne = {
+		UserId = 22665315,
+		Tag = "gamble addict",
+		Color = "84, 172, 255",
+		Color2 = "255, 215, 0",
+		ColorSequence = false,
+		Randomized = false,
+		Bold = true,
+		Italic = true,
+		Underline = false,
+		Rainbow = false
+	},
+	mystic = {
+		UserId = 691206806,
+		Tag = "rust addict",
+		Color = "84, 172, 255",
+		Color2 = "255, 215, 0",
+		ColorSequence = false,
+		Randomized = false,
+		Bold = true,
+		Italic = true,
+		Underline = false,
+		Rainbow = true
+	}
+}
