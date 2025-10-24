@@ -27,7 +27,7 @@
 			Italic = true
 		}
 	},
-	hwrt = { -- no rank speicallites
+	hwrt = {
 		GroupId = 35731019,
 		Tag = "hwrt",
 		Color = "255, 87, 241",
@@ -39,7 +39,7 @@
 		Underline = false,
 		Rainbow = false,
 	},
-	SAINTS = { -- no rank speicallites
+	SAINTS = {
 		GroupId = 64677204,
 		Tag = "SAINTS",
 		Color = "255, 255, 255",
@@ -51,5 +51,4 @@
 		Underline = false,
 		Rainbow = false,
 	}
-
 }
