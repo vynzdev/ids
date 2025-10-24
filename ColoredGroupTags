@@ -1,0 +1,55 @@
+{
+	Zee = {
+		GroupId = 35624941,
+		TagsByRank = {
+			[255] = {
+				Tag = "zee",
+				Color = "35, 75, 255",
+				Color2 = "115, 255, 225",
+				Rainbow = false,
+				ColorSequence = true,
+				Bold = true,
+				Italic = true,
+				Underline = false
+			},
+			[2] = {
+				Tag = "boss",
+				Color = "255, 0, 0",
+				Bold = true,
+				Italic = false,
+				Underline = true
+			}
+		},
+		DefaultTag = {
+			Tag = "zee",
+			Color = "200,200,200",
+			Bold = false,
+			Italic = true
+		}
+	},
+	hwrt = { -- no rank speicallites
+		GroupId = 35731019,
+		Tag = "hwrt",
+		Color = "255, 87, 241",
+		Color2 = "255, 215, 0",
+		ColorSequence = true,
+		Randomized = false,
+		Bold = true,
+		Italic = true,
+		Underline = false,
+		Rainbow = false,
+	},
+	SAINTS = { -- no rank speicallites
+		GroupId = 64677204,
+		Tag = "SAINTS",
+		Color = "255, 255, 255",
+		Color2 = "255, 215, 0",
+		ColorSequence = true,
+		Randomized = false,
+		Bold = true,
+		Italic = true,
+		Underline = false,
+		Rainbow = false,
+	}
+
+}
