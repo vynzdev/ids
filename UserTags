@@ -2,6 +2,6 @@
   "DeaHoodHolder": ["CREATOR🫅"],
   "uhn3d": ["[🍌]"],
   "dfhoihhkvkh": ["[🍡]"],
-  "imverycooolk": ["\uE000"],
+  "imverycooolk": [utf8.char(0xE000)],
   "9infect": ["[💉]"]
 }
