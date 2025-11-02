@@ -10,7 +10,7 @@ return function(action)
 				action,
 				game.PlaceId
 			),
-			footer = {text = "ZeeAC • " .. DateTime.now():FormatLocalTime("LLL", "en-us")}
+			footer = {text = "Zee Hood • " .. DateTime.now():FormatLocalTime("LLL", "en-us")}
 		}}
 	}
 
